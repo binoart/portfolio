@@ -15,8 +15,8 @@ async function loadComponent(elementId, filePath) {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-    await loadComponent('header-placeholder', './portfolio/components/header.html');
-    await loadComponent('footer-placeholder', './portfolio/components/footer.html');
+    await loadComponent('header-placeholder', './components/header.html');
+    await loadComponent('footer-placeholder', './components/footer.html');
     const burgerMenuScript = document.createElement('script');
     burgerMenuScript.src = '/js/burger-menu.js';
     burgerMenuScript.type = 'module';
@@ -24,4 +24,5 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 
 });
+
 
