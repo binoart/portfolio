@@ -1,7 +1,7 @@
 const PRIVATE_COLLECTION= "(Collezione privata)"
 async function loadArtworks() {
     try {
-        const response = await fetch('./portfolio/data/data.json');
+        const response = await fetch('./data/data.json');
         const artworks = await response.json();
         const grid = document.getElementById('artwork-grid');
 
@@ -121,3 +121,4 @@ function closeModal() {
 
 
 document.addEventListener('DOMContentLoaded', loadArtworks);
+
